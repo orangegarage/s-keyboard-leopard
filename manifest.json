@@ -1,0 +1,18 @@
+{
+    "manifest_version": 1.0,
+    "name": "s-keyboard-leopard",
+    "version": "1.0",
+    "default_locale": "en",
+
+    "browser_action": {
+        "default_icon": {
+            "xkcdicon": "img/xkcd512x512.jpg"
+        }
+    },
+
+    "content_scripts":[{
+        "matches": ["<all_urls>"],
+        "run_at": "document_end",
+        "js": ["js/xkcd0037.js", "js/xkcd1031.js"]
+    }]
+}
