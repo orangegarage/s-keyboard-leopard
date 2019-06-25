@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type ="text/javascript" src="js/xkcd1031.js"></script> 
-        <script type ="text/javascript" src="js/xkcd0037.js"></script>
-
+        <script type= "text/javascript" src="js/xkcd1031.js"></script>
+        <script type= "text/javascript" src="js/xkcd0037.js"></script>
+        <link rel="stylesheet" type= "text/css" href="css/style.css"/>
         <title>COMPUTER KEYBOARDS</title>
     </head>
     <body>
@@ -13,14 +13,24 @@
 
         <p>My hobby: whenever anyone calls something an [adj]-ass [noun], I mentally move the hyphen one word to the right.<br>
         "Man, that's a sweet-ass car."</p>
-        <div class="switch">
-            <input type="checkbox" id="1031check" onclick="switchFunction()">xkcd1031</input>
-            <input type="checkbox" id="0037check" onclick="switchFunction()">xkcd0037</input>
-        </div>
-
+        xkcd1031>
+        <label class="switch">
+            <input type="checkbox" id="1031check" onclick="switchFunction()">
+                <div class="slider"></div>
+            </input>
+        </label>
+        
+        xkcd0037>
+        <label class="switch">
+            <input type="checkbox" id="0037check" onclick="switchFunction()">
+                <div class="slider"></div>
+            </input>
+        </label>
+        
     </body>
     <!-- need to make separate html for popup? 
     Make this the popup wowow-->
     <script type ="text/javascript" src="js/switch.js"></script>
     <!-- put the management script here bc need to load after everything. window.onload not working for some reason -->
+    <!-- change body width and height to make it look like a popup later-->
 </html>
