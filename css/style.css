@@ -1,0 +1,49 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 2em;
+  }
+  /* https://www.w3schools.com/howto/howto_css_switch.asp */
+   /* hiding default html checkbox */
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e4446a;
+    -webkit-transition: .2s;
+    transition: .42;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.1em;
+    left: 0.4em;
+    bottom: 0.25em;
+    background-color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(51, 144, 219);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(51,144,219);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(1.1em);
+    transform: translateX(1.1em);
