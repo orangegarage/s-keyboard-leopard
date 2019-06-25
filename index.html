@@ -3,6 +3,7 @@
     <head>
         <script type ="text/javascript" src="js/xkcd1031.js"></script> 
         <script type ="text/javascript" src="js/xkcd0037.js"></script>
+
         <title>COMPUTER KEYBOARDS</title>
     </head>
     <body>
@@ -12,7 +13,14 @@
 
         <p>My hobby: whenever anyone calls something an [adj]-ass [noun], I mentally move the hyphen one word to the right.<br>
         "Man, that's a sweet-ass car."</p>
-        <button onclick="xkcd1031()">xkcd1031</button>
-        <button onclick="xkcd0037()">xkcd0037</button>
+        <div class="switch">
+            <input type="checkbox" id="1031check" onclick="switchFunction()">xkcd1031</input>
+            <input type="checkbox" id="0037check" onclick="switchFunction()">xkcd0037</input>
+        </div>
+
     </body>
+    <!-- need to make separate html for popup? 
+    Make this the popup wowow-->
+    <script type ="text/javascript" src="js/switch.js"></script>
+    <!-- put the management script here bc need to load after everything. window.onload not working for some reason -->
 </html>
