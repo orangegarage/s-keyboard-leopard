@@ -3,6 +3,6 @@
 
 To add:
 
-Popup with toggleable button/sliders << index. html
+Popup with toggleable button/sliders << index.html
 
 Convert to chrome
