@@ -4,6 +4,6 @@ but because a REGEX is too much
 
 To add:
 
-Popup with toggleable button/sliders << index.html
+~~Popup with toggleable button/sliders << index.html~~ <Added
 
 Convert to chrome
