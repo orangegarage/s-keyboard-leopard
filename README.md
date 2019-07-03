@@ -7,3 +7,5 @@ To add:
 ~~Popup with toggleable button/sliders << index.html~~ <Added
 
 Convert to chrome
+
+<b>1. What is this project</b>
